@@ -1,0 +1,28 @@
+header {
+  &.header {
+    .navbar {
+      &.add-bg {
+        background-color: rgba(40, 69, 76, 0.8);
+      }
+
+      @include transition(0.5s);
+
+      .container-fluid {
+        max-width: 1320px;
+
+        .navbar-brand {
+          color: $theme-color;
+        }
+
+        .nav-link {
+          color: $white;
+
+          &.active {
+            color: $theme-color;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

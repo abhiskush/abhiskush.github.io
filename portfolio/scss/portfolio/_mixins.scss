@@ -1,0 +1,80 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* Browsers: last 4 version
+*/
+
+@mixin align-items($val) {
+  -webkit-box-align: $val;
+     -ms-flex-align: $val;
+        align-items: $val;
+}
+
+@mixin backdrop-filter($val) {
+  -webkit-backdrop-filter: $val;
+          backdrop-filter: $val;
+}
+
+@mixin border-radius($val) {
+  -webkit-border-radius: $val;
+     -moz-border-radius: $val;
+      -ms-border-radius: $val;
+       -o-border-radius: $val;
+          border-radius: $val;
+}
+
+@mixin box-shadow($val...) {
+  -webkit-box-shadow: $val;
+          box-shadow: $val;
+}
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin dislplay-webkit-box {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin flex-direction($val) {
+  -webkit-box-direction: $val;
+     -webkit-box-orient: $val;
+     -ms-flex-direction: $val;
+         flex-direction: $val;
+}
+
+@mixin justify-content($val) {
+  -webkit-box-pack: $val;
+     -ms-flex-pack: $val;
+   justify-content: $val;
+}
+
+@mixin object-fit($val) {
+  -o-object-fit: $val;
+     object-fit: $val;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+     -moz-transform: $val;
+      -ms-transform: $val;
+       -o-transform: $val;
+          transform: $val;
+}
+
+@mixin transform-origin($val) {
+  -webkit-transform-origin: $val;
+      -ms-transform-origin: $val;
+          transform-origin: $val;
+}
+
+@mixin transition($val) {
+  -webkit-transition: $val;
+     -moz-transition: $val;
+      -ms-transition: $val;
+       -o-transition: $val;
+          transition: $val;
+}

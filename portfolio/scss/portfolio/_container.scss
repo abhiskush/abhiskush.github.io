@@ -1,0 +1,139 @@
+.one {
+  font-size: 12px;
+
+  .two {
+    text-align: center;
+  }
+}
+
+section {
+  > .container {
+    padding-top: 70px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 576px) {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    .ribbon {
+      height: 50px;
+      line-height: 50px;
+      border-top: 2px solid $white;
+      border-bottom: 2px solid $white;
+      max-width: 500px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      @include box-shadow(
+        3px 3px 16px 0px rgba($black, 0.4),
+        inset 2px 2px 14px 4px rgba($white, 0.15)
+      );
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        width: 35px;
+        height: 35px;
+        top: 50%;
+        @include transform-origin(center);
+      }
+
+      &::before {
+        left: 0;
+        @include transform(translate(-46%, -50%) rotate(45deg));
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
+      }
+
+      &::after {
+        right: 0;
+        @include transform(translate(46%, -50%) rotate(45deg));
+        border-bottom: 2px solid $white;
+        border-left: 2px solid $white;
+      }
+    }
+
+    .word-break {
+      word-break: break-all;
+    }
+
+    // removed class because it's no longer required
+    // .glassmorphism {
+    //   background: rgba($white, 0.25);
+    //   @include box-shadow(0 8px 32px 0 rgba(31, 38, 135, 0.37));
+    //   @include backdrop-filter(blur(4px));
+    //   border-radius: 10px;
+    //   border: 1px solid rgba($white, 0.18);
+    // }
+
+    .glass-list {
+      .glass-list-item {
+        &:nth-child(5n-4) {
+          p {
+            &:hover {
+              background-color: rgba($pattern-color-1, 0.5);
+            }
+          }
+        }
+
+        &:nth-child(5n-3) {
+          p {
+            &:hover {
+              background-color: rgba($pattern-color-2, 0.5);
+            }
+          }
+        }
+
+        &:nth-child(5n-2) {
+          p {
+            &:hover {
+              background-color: rgba($pattern-color-3, 0.5);
+            }
+          }
+        }
+
+        &:nth-child(5n-1) {
+          p {
+            &:hover {
+              background-color: rgba($pattern-color-4, 0.5);
+            }
+          }
+        }
+
+        &:nth-child(5n) {
+          p {
+            &:hover {
+              background-color: rgba($pattern-color-5, 0.5);
+            }
+          }
+        }
+
+        p {
+          text-transform: uppercase;
+          font-size: 12px;
+          line-height: 1.5;
+          padding: 8px 16px;
+          @include transition(all 0.5s);
+          border-radius: 24px;
+          border: 1px solid rgba($white, 0.35);
+          text-align: center;
+
+          @media screen and (min-width: 576px) {
+            font-size: 14px;
+          }
+
+          @media screen and (min-width: 768px) {
+            font-size: 16px;
+          }
+
+          &:hover {
+            @include transform(scale(1.1));
+          }
+        }
+      }
+    }
+  }
+}

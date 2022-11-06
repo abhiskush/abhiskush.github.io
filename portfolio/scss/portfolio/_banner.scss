@@ -1,0 +1,77 @@
+section {
+  &.banner {
+    background-image: url("../../images/portfolio/banner.jpg");
+    background-color: rgba(111, 23, 147, 0.78);
+    background-blend-mode: overlay;
+    background-attachment: initial;
+
+    .profile_pic {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 30px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, calc(-50% + 40px)));
+      }
+    }
+
+    .intro {
+      .text {
+        font-size: 36px;
+
+        .name {
+          font-size: 60px;
+          font-family: "Beau Rivage", cursive;
+          display: inline-block;
+          letter-spacing: 5px;
+
+          @media screen and (min-width: 576px) {
+            letter-spacing: 10px;
+            font-size: 50px;
+          }
+
+          @media screen and (min-width: 768px) {
+            font-size: 75px;
+          }
+
+          @media screen and (min-width: 992px) {
+            font-size: 100px;
+          }
+
+          &::first-letter {
+            text-transform: capitalize;
+            color: $theme-color;
+          }
+        }
+      }
+
+      .role {
+        font-size: 22px;
+
+        @media screen and (min-width: 576px) {
+          font-size: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .bio {
+      font-size: 16px;
+      color: $grey;
+
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+  }
+}

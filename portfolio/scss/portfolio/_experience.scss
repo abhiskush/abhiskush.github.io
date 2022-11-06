@@ -1,0 +1,135 @@
+section {
+  &.experience {
+    background-image: url("../../images/portfolio/experience.jpg");
+
+    .experience-wrapper {
+      .experience-box {
+        &,
+        .org-within {
+          border-left: 1px solid;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            @include transform(translate(-50%, -50%));
+          }
+        }
+
+        &::before {
+          @include box-shadow(0 0 20px, 0 0 10px 4px);
+        }
+
+        .org-within {
+          &::before {
+            @include box-shadow(0 0 10px 1px, 0 0 2px 0px);
+          }
+        }
+      }
+
+      .org-url {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-style: italic;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          left: 50%;
+          @include transform(translateX(-50%));
+          @include transition(width 0.7s);
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+
+      .org-within {
+        &::before {
+          background-color: rgba($white, 0.84);
+        }
+
+        &:last-of-type {
+          padding-bottom: 0 !important;
+        }
+      }
+
+      .desc {
+        color: $grey;
+      }
+
+      &:last-of-type {
+        .experience-box {
+          padding-bottom: 0 !important;
+        }
+      }
+
+      &:nth-child(5n-4) {
+        color: $pattern-color-1;
+
+        .experience-box,
+        .org-url {
+          &::before {
+            background-color: $pattern-color-1;
+          }
+        }
+      }
+
+      &:nth-child(5n-3) {
+        color: $pattern-color-2;
+
+        .experience-box,
+        .org-url {
+          &::before {
+            background-color: $pattern-color-2;
+          }
+        }
+      }
+
+      &:nth-child(5n-2) {
+        color: $pattern-color-3;
+
+        .experience-box,
+        .org-url {
+          &::before {
+            background-color: $pattern-color-3;
+          }
+        }
+      }
+
+      &:nth-child(5n-1) {
+        color: $pattern-color-4;
+
+        .experience-box,
+        .org-url {
+          &::before {
+            background-color: $pattern-color-4;
+          }
+        }
+      }
+
+      &:nth-child(5n) {
+        color: $pattern-color-5;
+
+        .experience-box,
+        .org-url {
+          &::before {
+            background-color: $pattern-color-5;
+          }
+        }
+      }
+    }
+  }
+}

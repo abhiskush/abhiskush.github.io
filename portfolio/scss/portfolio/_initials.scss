@@ -1,0 +1,24 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* added overflow property here because scroll-reveal JS generates the horizontal scroll while animating from left to right and vice versa. */
+  overflow: hidden;
+}
+
+.theme-color {
+  color: $theme-color;
+}
+
+.tooltip-inner {
+  max-width: 300px;
+  background-color: rgb(137, 27, 83);
+}

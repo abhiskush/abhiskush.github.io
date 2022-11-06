@@ -1,0 +1,85 @@
+section {
+  &.about {
+    background: -o-linear-gradient(
+      left,
+      rgb(44, 83, 100),
+      rgb(32, 58, 67),
+      rgb(15, 32, 39)
+    );
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgb(44, 83, 100)),
+      color-stop(rgb(32, 58, 67)),
+      to(rgb(15, 32, 39))
+    );
+    background: linear-gradient(
+      to right,
+      rgb(44, 83, 100),
+      rgb(32, 58, 67),
+      rgb(15, 32, 39)
+    );
+
+    .img-bg {
+      background: -o-linear-gradient(
+        45deg,
+        rgba(255, 63, 0, 0.549),
+        rgb(47, 36, 64),
+        rgba(194, 44, 99, 0.569)
+      );
+      background: linear-gradient(
+        45deg,
+        rgba(255, 63, 0, 0.549),
+        rgb(47, 36, 64),
+        rgba(194, 44, 99, 0.569)
+      );
+
+      @media screen and (max-width: 767px) {
+        margin-top: calc($profile-pic-width / 1.5);
+      }
+
+      .img-container {
+        @media screen and (max-width: 767px) {
+          padding-bottom: calc($profile-pic-width / 2);
+        }
+        .img-wrapper {
+          width: 100%;
+          padding-bottom: 100%;
+          position: relative;
+
+          @media screen and (max-width: 767px) {
+            position: absolute;
+            left: 50%;
+            @include transform(translate(-50%, -60%));
+            width: $profile-pic-width;
+            padding-bottom: $profile-pic-width;
+            @include border-radius(50%);
+            overflow: hidden;
+          }
+
+          .profile-pic {
+            @include border-radius(50%);
+            background-image: url("../../images/portfolio/dp.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 25%;
+            position: absolute;
+            inset: 0;
+          }
+        }
+      }
+    }
+
+    .responsibilities {
+      ul li {
+        &::marker {
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          content: "\f058";
+          color: rgb(25, 135, 84);
+        }
+      }
+    }
+  }
+}

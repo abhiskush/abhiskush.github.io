@@ -1,0 +1,219 @@
+section {
+  &.cards-section {
+    background: -o-linear-gradient(
+      60deg,
+      rgb(98, 56, 108) 0%,
+      rgb(21, 34, 48) 53%,
+      rgb(117, 68, 15) 120%
+    );
+    background: linear-gradient(
+      30deg,
+      rgb(98, 56, 108) 0%,
+      rgb(21, 34, 48) 53%,
+      rgb(117, 68, 15) 120%
+    );
+
+    .card-wrapper {
+      @include display-flex;
+      margin-bottom: 30px;
+      @include transition(all 1s);
+
+      .card-box {
+        border-top: 2px solid;
+        background-size: 100% 200%;
+        @include transition(all 1s);
+        position: relative;
+        opacity: 0.85;
+
+        .card-image {
+          @include display-flex;
+          @include justify-content(center);
+          @include align-items(center);
+
+          i {
+            font-size: 60px;
+
+            @media screen and (min-width: 576px) {
+              font-size: 80px;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: 10px 0 10px 0;
+          }
+        }
+
+        .title {
+          font-size: 22px;
+          @include display-flex;
+          @include align-items(center);
+        }
+
+        .head {
+          font-size: 18px;
+        }
+
+        .desc {
+          font-size: 14px;
+          margin-bottom: 0;
+          color: $grey;
+        }
+
+        .head,
+        .desc {
+          &::first-letter {
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      &:nth-child(5n-4) {
+        .card-box {
+          color: $pattern-color-1;
+          background-image: -o-linear-gradient(
+            top,
+            transparent 50%,
+            rgba($pattern-color-1, 0.05) 50%
+          );
+          background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            color-stop(50%, transparent),
+            color-stop(50%, rgba($pattern-color-1, 0.05))
+          );
+          background-image: linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba($pattern-color-1, 0.05) 50%
+          );
+          @include box-shadow(
+            0 2px 4px -1px rgba($pattern-color-1, 0.2),
+            0 4px 5px 0 rgba($pattern-color-1, 0.14),
+            0 1px 10px 0 rgba($pattern-color-1, 0.12)
+          );
+        }
+      }
+
+      &:nth-child(5n-3) {
+        .card-box {
+          color: $pattern-color-2;
+          background-image: -o-linear-gradient(
+            top,
+            transparent 50%,
+            rgba($pattern-color-2, 0.05) 50%
+          );
+          background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            color-stop(50%, transparent),
+            color-stop(50%, rgba($pattern-color-2, 0.05))
+          );
+          background-image: linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba($pattern-color-2, 0.05) 50%
+          );
+          @include box-shadow(
+            0 2px 4px -1px rgba($pattern-color-2, 0.2),
+            0 4px 5px 0 rgba($pattern-color-2, 0.14),
+            0 1px 10px 0 rgba($pattern-color-2, 0.12)
+          );
+        }
+      }
+
+      &:nth-child(5n-2) {
+        .card-box {
+          color: $pattern-color-3;
+          background-image: -o-linear-gradient(
+            top,
+            transparent 50%,
+            rgba($pattern-color-3, 0.05) 50%
+          );
+          background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            color-stop(50%, transparent),
+            color-stop(50%, rgba($pattern-color-3, 0.05))
+          );
+          background-image: linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba($pattern-color-3, 0.05) 50%
+          );
+          @include box-shadow(
+            0 2px 4px -1px rgba($pattern-color-3, 0.2),
+            0 4px 5px 0 rgba($pattern-color-3, 0.14),
+            0 1px 10px 0 rgba($pattern-color-3, 0.12)
+          );
+        }
+      }
+
+      &:nth-child(5n-1) {
+        .card-box {
+          color: $pattern-color-4;
+          background-image: -o-linear-gradient(
+            top,
+            transparent 50%,
+            rgba($pattern-color-4, 0.05) 50%
+          );
+          background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            color-stop(50%, transparent),
+            color-stop(50%, rgba($pattern-color-4, 0.05))
+          );
+          background-image: linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba($pattern-color-4, 0.05) 50%
+          );
+          @include box-shadow(
+            0 2px 4px -1px rgba($pattern-color-4, 0.2),
+            0 4px 5px 0 rgba($pattern-color-4, 0.14),
+            0 1px 10px 0 rgba($pattern-color-4, 0.12)
+          );
+        }
+      }
+
+      &:nth-child(5n) {
+        .card-box {
+          color: $pattern-color-5;
+          background-image: -o-linear-gradient(
+            top,
+            transparent 50%,
+            rgba($pattern-color-5, 0.05) 50%
+          );
+          background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            color-stop(50%, transparent),
+            color-stop(50%, rgba($pattern-color-5, 0.05))
+          );
+          background-image: linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba($pattern-color-5, 0.05) 50%
+          );
+          @include box-shadow(
+            0 2px 4px -1px rgba($pattern-color-5, 0.2),
+            0 4px 5px 0 rgba($pattern-color-5, 0.14),
+            0 1px 10px 0 rgba($pattern-color-5, 0.12)
+          );
+        }
+      }
+
+      &:hover {
+        @include transform(scale(1.02));
+
+        .card-box {
+          background-position: 0 -100%;
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}

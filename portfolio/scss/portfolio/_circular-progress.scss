@@ -1,0 +1,81 @@
+section {
+  &.circular-progress {
+    background-image: url("../../images/portfolio/code.png");
+
+    .circle-wrapper {
+      &:nth-child(5n-4) {
+        .circle {
+          background-image: conic-gradient(
+            $pattern-color-1 0deg,
+            rgba($pattern-color-1, 0.5) 0deg
+          );
+        }
+      }
+
+      &:nth-child(5n-3) {
+        .circle {
+          background-image: conic-gradient(
+            $pattern-color-2 0deg,
+            rgba($pattern-color-2, 0.5) 0deg
+          );
+        }
+      }
+
+      &:nth-child(5n-2) {
+        .circle {
+          background-image: conic-gradient(
+            $pattern-color-3 0deg,
+            rgba($pattern-color-3, 0.5) 0deg
+          );
+        }
+      }
+
+      &:nth-child(5n-1) {
+        .circle {
+          background-image: conic-gradient(
+            $pattern-color-4 0deg,
+            rgba($pattern-color-4, 0.5) 0deg
+          );
+        }
+      }
+
+      &:nth-child(5n) {
+        .circle {
+          background-image: conic-gradient(
+            $pattern-color-5 0deg,
+            rgba($pattern-color-5, 0.5) 0deg
+          );
+        }
+      }
+
+      .circle-box {
+        max-width: 150px;
+        margin: 0 auto;
+
+        .circle {
+          width: 100%;
+          padding-top: 100%;
+          position: relative;
+          font-size: 18px;
+
+          .data {
+            position: absolute;
+            inset: 10px;
+            @include display-flex;
+            @include justify-content(center);
+            @include align-items(center);
+            @include flex-direction(column);
+
+            p {
+              &:first-child {
+                @include dislplay-webkit-box;
+                -webkit-line-clamp: 3;
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
