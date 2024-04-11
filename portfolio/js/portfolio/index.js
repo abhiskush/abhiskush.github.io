@@ -7,8 +7,7 @@ let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 
 // code JS
-function current_duration() {
-  let from = new Date(2020, 0, 9);
+function current_duration(from) {
   let today = new Date();
 
   let days = today.getDate() - from.getDate();
@@ -54,7 +53,8 @@ function current_duration() {
   return duration;
 }
 
-$("#current-duration").text(current_duration());
+$("#current-duration").text(current_duration(new Date(2023, 5, 22)));
+$("#total-experience").text(current_duration(new Date(2020, 0, 9)));
 
 // ScrollReveal JS
 let options = {

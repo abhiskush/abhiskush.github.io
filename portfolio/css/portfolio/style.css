@@ -516,19 +516,12 @@ section.contact .transparent-box .input-box textarea {
 section.contact .transparent-box .input-box input:not(:-moz-placeholder-shown), section.contact .transparent-box .input-box textarea:not(:-moz-placeholder-shown) {
   border-bottom-color: rgb(255, 203, 2);
 }
-section.contact .transparent-box .input-box input:not(:-ms-input-placeholder), section.contact .transparent-box .input-box textarea:not(:-ms-input-placeholder) {
-  border-bottom-color: rgb(255, 203, 2);
-}
 section.contact .transparent-box .input-box input:focus, section.contact .transparent-box .input-box input:not(:placeholder-shown),
 section.contact .transparent-box .input-box textarea:focus,
 section.contact .transparent-box .input-box textarea:not(:placeholder-shown) {
   border-bottom-color: rgb(255, 203, 2);
 }
 section.contact .transparent-box .input-box input:not(:-moz-placeholder-shown) ~ label, section.contact .transparent-box .input-box textarea:not(:-moz-placeholder-shown) ~ label {
-  transform: translate(-25px, -18px);
-  font-size: 12px;
-}
-section.contact .transparent-box .input-box input:not(:-ms-input-placeholder) ~ label, section.contact .transparent-box .input-box textarea:not(:-ms-input-placeholder) ~ label {
   transform: translate(-25px, -18px);
   font-size: 12px;
 }
@@ -541,9 +534,6 @@ section.contact .transparent-box .input-box textarea:not(:placeholder-shown) ~ l
 section.contact .transparent-box .input-box input:not(:-moz-placeholder-shown) ~ label, section.contact .transparent-box .input-box input:not(:-moz-placeholder-shown) ~ i, section.contact .transparent-box .input-box textarea:not(:-moz-placeholder-shown) ~ label, section.contact .transparent-box .input-box textarea:not(:-moz-placeholder-shown) ~ i {
   color: rgb(255, 203, 2);
 }
-section.contact .transparent-box .input-box input:not(:-ms-input-placeholder) ~ label, section.contact .transparent-box .input-box input:not(:-ms-input-placeholder) ~ i, section.contact .transparent-box .input-box textarea:not(:-ms-input-placeholder) ~ label, section.contact .transparent-box .input-box textarea:not(:-ms-input-placeholder) ~ i {
-  color: rgb(255, 203, 2);
-}
 section.contact .transparent-box .input-box input:focus ~ label,
 section.contact .transparent-box .input-box input:focus ~ i, section.contact .transparent-box .input-box input:not(:placeholder-shown) ~ label,
 section.contact .transparent-box .input-box input:not(:placeholder-shown) ~ i,
@@ -553,18 +543,11 @@ section.contact .transparent-box .input-box textarea:not(:placeholder-shown) ~ l
 section.contact .transparent-box .input-box textarea:not(:placeholder-shown) ~ i {
   color: rgb(255, 203, 2);
 }
-section.contact .transparent-box .input-box input:-ms-input-placeholder,
-section.contact .transparent-box .input-box textarea:-ms-input-placeholder {
-  opacity: 0;
-}
 section.contact .transparent-box .input-box input::-moz-placeholder,
 section.contact .transparent-box .input-box textarea::-moz-placeholder {
   opacity: 0;
 }
 section.contact .transparent-box .input-box input::-moz-placeholder, section.contact .transparent-box .input-box textarea::-moz-placeholder {
-  opacity: 0;
-}
-section.contact .transparent-box .input-box input:-ms-input-placeholder, section.contact .transparent-box .input-box textarea:-ms-input-placeholder {
   opacity: 0;
 }
 section.contact .transparent-box .input-box input::placeholder,
